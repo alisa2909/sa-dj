@@ -1,0 +1,1736 @@
+*{
+    box-sizing: border-box;
+}
+
+/* везде поставить vw или % чтобы резина в голос добавить голос аудио */
+html, body {
+    margin: 0;
+    padding: 0;
+    display: block;
+    width: 100%;
+    height: 300vw;
+}
+
+.first-frame {
+    /* display: flex;    */
+    height: 55vw; 
+    width: auto;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background-image: url(../images/GOLOS\ SCREEN.svg);
+    background-size: cover;
+}
+
+
+.box {
+    width: 7.4vw;
+    height: 2.8vw;
+    margin-top: 4.85vw;
+    margin-left: 3.28vw;
+    margin-bottom: -4.3vw;
+    display: block;
+    background-color: gray;
+    border: 0.67vw solid white;
+    border-radius: 1.3vw;
+    /* position: absolute; */
+}
+
+.second-box {
+    /* position: relative; */
+    display: block;
+    margin-top: -14.3vw;
+    margin-left: 85.18vw;  
+}
+
+.circle {
+    width: 4vw;
+    height: 4vw;
+    border-radius: 50%;
+    margin: -17.5vw;
+    display: inline-block;
+    border: 0.67vw solid #D9D9D9;
+    /* margin-top: 12vw;
+    margin-left: 32.23vw; */
+    transform: translate( 80.3vw, -2.5vw );
+}
+
+/* .cir {
+  width: 4vw;
+  height: 4vw;
+  border-radius: 50%;
+  margin: -17.5vw;
+  display: inline-block;
+  border: 0.67vw solid #D9D9D9;
+  /* margin-top: 12vw;
+  margin-left: 32.23vw; */
+  /* transform: translate( 126.3vw, 5.3vw );
+} */ 
+
+
+.krugic{
+    width: 30%;
+    position: absolute;
+    animation: starround 6s linear infinite;
+    margin-left: 2.5%;
+    margin-top: 11%;
+    display: block;
+}
+@keyframes starround {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+.krugochek {
+    width: 30%;
+    position: absolute;
+    animation: starround 6s linear infinite;
+    margin-left: 67.5%;
+    margin-top: 11%;
+    display: block;
+}
+@keyframes starround {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+.minikrugok {
+  transform: translate(47vw, 38vw);
+  position: absolute;
+  width: 5vw;
+  height: 5vw;
+}
+
+.krug {
+    width: 6.7vw;
+    height: 6.7vw;
+    border-radius: 50%;
+    margin: 22.3px;
+    background-color: #EC008C;
+    transition: background-color 0.5s;
+    display: inline-block;
+    margin: 1vw;
+}
+
+.background {
+    width: 100%;
+    height: 8.9vw;
+    margin-top: 0.7vw;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background-image: url(../images/phon.png);
+    background-size: cover;
+}
+
+.second-frame {
+    width: 100%;
+    height: 80vw;
+    margin-top: 0.7vw;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background-image: url(../images/bit_screen.svg);
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+}
+
+.bitok {
+  width: 63.9vw;
+  height: 33vw;
+  position: absolute;
+  transform: translate(4.6vw, 18vw);
+}
+section{
+    display: grid;
+    overflow: hidden;
+    margin-left: 71.25%;
+    margin-top: 15.4%;
+
+}
+
+.slider {
+    /* border-radius: 5px; */
+    background: #3E3E3E;
+    background: linear-gradient(left top, #E0E0E0, #EEEEEE);
+    width: 21vw;
+    height: 0.8vw;
+    margin: 3.19vw;
+    transform: translate(0.35vw, 0vw);
+}
+
+.thumb {
+    touch-action: none;
+    width: 5.6vw;
+    height: 5.6vw;
+    border-radius: 0.1vw;
+    position: relative;
+    left: 10px;
+    top: -2.7vw;
+    /* background: rgb(182, 182, 236); */
+    cursor: pointer;
+    background-image: url(../images/rrr.png);
+    background-size: 95%;
+    background-repeat: no-repeat ;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 17.1%;
+    margin-top: 4.4vw;
+  }
+  
+  .container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .container img:last-child { /* Изображение для наведения */
+    visibility: hidden;
+  }
+  
+  .container:hover img:last-child {
+    visibility: visible;
+  }
+
+.instrum {
+    width: 100%;
+    height: 17.1%;
+    /* margin-top: -1.8vw; */
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background-image: url(../images/instrument.svg);
+    background-size: 100%;
+    background-repeat: no-repeat ;
+    transform: translate(0vw, -0.68vw);
+}
+
+.third-frame {
+    position: absolute;
+    width: 100%;
+    height: 130%;
+    overflow: hidden;
+}
+/* bar */
+
+.bar {
+    position: relative;
+}
+
+.container-2 {
+    position: relative;
+    width: 23.9vw;
+    height: 24.7vw;
+    transform: translate(-0.85vw, 0.6vw);
+    
+  }
+  
+  .container-2 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .container-2 img:last-child { /* Изображение для наведения */
+    visibility: hidden;
+  }
+  
+  .container-2:hover img:last-child {
+    visibility: visible;
+  }
+
+/* pia */
+.pia {
+    position: absolute;
+   
+   
+}
+
+.container-3 {
+    position: relative;
+    width: 55.1vw;
+    height: 39.6vw;
+    transform: translate(23.18vw, -25.7vw);
+  }
+  
+  .container-3 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .container-3 img:last-child { /* Изображение для наведения */
+    visibility: hidden;
+  }
+  
+  .container-3:hover img:last-child {
+    visibility: visible;
+  }
+
+
+/* git */
+.gitra {
+    position: absolute;
+    
+   
+}
+
+.container-4 {
+    position: relative;
+    width: 38.7vw;
+    height: 58.1vw;
+    transform: translate(69.7vw, -63.7vw);
+  }
+  
+  .container-4 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .container-4 img:last-child { /* Изображение для наведения */
+    visibility: hidden;
+  }
+  
+  .container-4:hover img:last-child {
+    visibility: visible;
+  }
+
+/* truba */
+.trub {
+    position: absolute;
+    
+}
+
+.container-5 {
+    position: absolute;
+    width: 27.4vw;
+    height: 16.6vw;
+    transform: translate(50.9vw, 11vw);
+  }
+  
+  .container-5 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .container-5 img:last-child { /* Изображение для наведения */
+    visibility: hidden;
+  }
+  
+  .container-5:hover img:last-child {
+    visibility: visible;
+  }
+
+
+
+.fourth-frame {
+    width: 100%;
+    height: 62.9vw;
+    margin-top: 26.2vw;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background-image: url(../images/temp_screen\ \(2\).svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.aa {
+    position: absolute;
+    margin-top: 0.78vw;
+    margin-left: 0.777vw;
+}
+
+.kr {
+    width: 3.53vw;
+    height: 3.53vw;
+    border-radius: 50%;
+    background-color: #3E3E3E;
+    display: grid;
+    margin: 1.8vw;
+    transition: background-color 0.3s ease;
+  }
+  
+  .kr.clicked {
+    background-color: #00AEEF;
+  }
+
+.aaa {
+    position: absolute;
+    margin-top: 0.78vw;
+    margin-left: 7.65vw;
+}
+
+.krr {
+    width: 3.53vw;
+    height: 3.53vw;
+    border-radius: 50%;
+    background-color: #3E3E3E;
+    display: grid;
+    margin: 1.8vw;
+    transition: background-color 0.3s ease;
+}
+  
+  .krr.clicked {
+    background-color: #FFF200;
+}
+
+.aaaa {
+    position: absolute;
+    margin-top: 0.78vw;
+    margin-left: 14.5vw;
+}
+
+.krrr {
+    width: 3.53vw;
+    height: 3.53vw;
+    border-radius: 50%;
+    background-color: #3E3E3E;
+    display: grid;
+    margin: 1.8vw;
+    transition: background-color 0.3s ease;
+}
+  
+.krrr.clicked {
+    background-color: #EC008C;
+}
+
+.a {
+    position: absolute;
+    margin-top: 11.45vw;
+    margin-left: 21.4vw;
+}
+
+.k {
+    width: 3.53vw;
+    height: 3.53vw;
+    border-radius: 50%;
+    background-color: #3E3E3E;
+    display: grid;
+    margin: 1.8vw;
+    transition: background-color 0.3s ease;
+  }
+  
+  .k.clicked {
+    background-color: #00AEEF;
+  }
+
+
+.ab {
+    position: absolute;
+    margin-top: 11.46vw;
+    margin-left: 28.3vw;
+}
+
+.kb {
+    width: 3.53vw;
+    height: 3.53vw;
+    border-radius: 50%;
+    background-color: #3E3E3E;
+    display: grid;
+    margin: 1.8vw;
+    transition: background-color 0.3s ease;
+  }
+  
+  .kb.clicked {
+    background-color: #FFF200;
+  }
+
+  .ac {
+    position: absolute;
+    margin-top: 11.45vw;
+    margin-left: 35.2vw;
+}
+
+.kc {
+    width: 3.53vw;
+    height: 3.53vw;
+    border-radius: 50%;
+    background-color: #3E3E3E;
+    display: grid;
+    margin: 1.8vw;
+    transition: background-color 0.3s ease;
+  }
+  
+  .kc.clicked {
+    background-color: #EC008C;
+  }
+
+
+  .ad {
+    position: absolute;
+    margin-top: 11.45vw;
+    margin-left: 42.02vw;
+}
+
+.kd {
+    width: 3.53vw;
+    height: 3.53vw;
+    border-radius: 50%;
+    background-color: #3E3E3E;
+    display: grid;
+    margin: 1.8vw;
+    transition: background-color 0.3s ease;
+  }
+  
+  .kd.clicked {
+    background-color: #00AEEF;
+  }
+
+  .ae {
+    position: absolute;
+    margin-top: 27.45vw;
+    margin-left: 49vw;
+}
+
+.ke {
+    width: 3.53vw;
+    height: 3.53vw;
+    border-radius: 50%;
+    background-color: #3E3E3E;
+    display: grid;
+    margin: 1.8vw;
+    transition: background-color 0.3s ease;
+  }
+  
+  .ke.clicked {
+    background-color: #FFF200;
+  }
+
+  .af {
+    position: absolute;
+    margin-top: 27.45vw;
+    margin-left: 56vw;
+}
+
+.kf {
+    width: 3.53vw;
+    height: 3.53vw;
+    border-radius: 50%;
+    background-color: #3E3E3E;
+    display: grid;
+    margin: 1.8vw;
+    transition: background-color 0.3s ease;
+  }
+  
+  .kf.clicked {
+    background-color: #EC008C;
+  }
+
+  .aj {
+    position: absolute;
+    margin-top: 27.45vw;
+    margin-left: 62.8vw;
+}
+
+.kj {
+    width: 3.53vw;
+    height: 3.53vw;
+    border-radius: 50%;
+    background-color: #3E3E3E;
+    display: grid;
+    margin: 1.8vw;
+    transition: background-color 0.3s ease;
+  }
+  
+  .kj.clicked {
+    background-color: #00AEEF;
+  }
+
+  .ax {
+    position: absolute;
+    margin-top: 27.45vw;
+    margin-left: 69.7vw;
+}
+
+.kx {
+    width: 3.53vw;
+    height: 3.53vw;
+    border-radius: 50%;
+    background-color: #3E3E3E;
+    display: grid;
+    margin: 1.8vw;
+    transition: background-color 0.3s ease;
+  }
+  
+  .kx.clicked {
+    background-color: #FFF200;
+  }
+
+  .az {
+    position: absolute;
+    margin-top: 32.75vw;
+    margin-left: 76.58vw;
+}
+
+.kz {
+    width: 3.53vw;
+    height: 3.53vw;
+    border-radius: 50%;
+    background-color: #3E3E3E;
+    display: grid;
+    margin: 1.8vw;
+    transition: background-color 0.3s ease;
+  }
+  
+  .kz.clicked {
+    background-color: #EC008C;
+  }
+
+  .ao {
+    position: absolute;
+    margin-top: 32.75vw;
+    margin-left: 83.65vw;
+}
+
+.ko {
+    width: 3.53vw;
+    height: 3.53vw;
+    border-radius: 50%;
+    background-color: #3E3E3E;
+    display: grid;
+    margin: 1.8vw;
+    transition: background-color 0.3s ease;
+  }
+  
+  .ko.clicked {
+    background-color: #00AEEF;
+  }
+
+  .ah {
+    position: absolute;
+    margin-top: 32.75vw;
+    margin-left: 90.55vw;
+}
+
+.kh {
+    width: 3.53vw;
+    height: 3.53vw;
+    border-radius: 50%;
+    background-color: #3E3E3E;
+    display: grid;
+    margin: 1.8vw;
+    transition: background-color 0.3s ease;
+  }
+  
+  .kh.clicked {
+    background-color: #FFF200;
+  }
+
+  .chariki{
+    margin-top: 0.5vw;
+    position: absolute;
+  }
+
+  .golos {
+    width: 100%;
+    height: 3.9%;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background-image: url(../images/golos.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.fifth-frame {
+    width: 100%;
+    height: 16.2%;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background-image: url(../images/vois.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+/* golos */
+
+.pau {
+    position: absolute;
+    
+}
+
+.cont {
+    position: absolute;
+    width: 12.5vw;
+    height: 9vw;
+    transform: translate(3.2vw, 1.4vw);
+  }
+  
+  .cont img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .cont img:last-child { /* Изображение для наведения */
+    visibility: hidden;
+  }
+  
+  .cont:hover img:last-child {
+    visibility: visible;
+  } 
+
+/*  */ 
+
+.pla {
+    position: absolute;
+    
+}
+
+.cont-2 {
+    position: absolute;
+    width: 12.5vw;
+    height: 9vw;
+    transform: translate(16.2vw, 1.4vw);
+  }
+  
+  .cont-2 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .cont-2 img:last-child { /* Изображение для наведения */
+    visibility: hidden;
+  }
+  
+  .cont-2:hover img:last-child {
+    visibility: visible;
+  } 
+  
+/*  */ 
+
+.sto {
+    position: absolute;
+    
+}
+
+.cont-3 {
+    position: absolute;
+    width: 12.5vw;
+    height: 9vw;
+    transform: translate(29.2vw, 1.4vw);
+  }
+  
+  .cont-3 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .cont-3 img:last-child { /* Изображение для наведения */
+    visibility: hidden;
+  }
+  
+  .cont-3:hover img:last-child {
+    visibility: visible;
+  } 
+  
+/* кнопки голос */
+.knop {    
+  width: 8.9vw;
+  height: 10.9vw;
+  justify-content: center;
+  position: absolute;
+  overflow: hidden;
+  background-image: url(../images/knopi.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  transform: translate(4.3vw, 4.15vw);
+}
+
+.knopi {    
+  width: 8.9vw;
+  height: 10.9vw;
+  justify-content: center;
+  position: absolute;
+  overflow: hidden;
+  background-image: url(../images/knopi.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  transform: translate(4.3vw, 18.2vw);
+}
+
+.knopik {    
+  width: 8.9vw;
+  height: 10.9vw;
+  justify-content: center;
+  position: absolute;
+  overflow: hidden;
+  background-image: url(../images/knopi.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  transform: translate(4.3vw, 32.2vw);
+}
+
+
+/* 1 */
+#contain {
+    width: 38.8vw;
+    height: 10vw;
+    overflow: hidden;
+    position: relative;
+    transform: translate(16.95vw, 4.2vw);
+    display: inline-block;
+  }
+  
+  .row {
+    height: 1vw;
+    position: relative;
+    white-space: nowrap;
+  }
+  
+  .block {
+    width: 2vw;
+    height: 0.2vw;
+    background-color: #00AEEF;
+    display: inline-block;
+    animation-play-state: paused;
+    margin: 0.1vw;
+  }
+
+  .blockik {
+    width: 2vw;
+    height: 0.2vw;
+    background-color: #00AEEF;
+    display: inline-block;
+    animation-play-state: paused;
+    margin: 0.1vw;
+}
+  
+  #contain.animated .block {
+    animation-play-state: running;
+  }
+  
+  
+  
+  .row:nth-child(1) .block {
+    animation: move 5s linear infinite; 
+  }
+  .row:nth-child(2) .block {
+    animation: move 8s linear infinite; /* Второй ряд - 8 секунд */
+  }
+  .row:nth-child(3) .block {
+    animation: move 3s linear infinite; /* Третий ряд - 3 секунды */
+  }
+  
+  
+  @keyframes move {
+    from { transform: translateX(0); }
+    to { transform: translateX(calc(700px - 50px)); }
+  }
+  
+  /* Задержка для каждого блока, чтобы создать эффект волны */
+  .block:nth-child(2) { animation-delay: 1s; }
+  .block:nth-child(3) { animation-delay: 2s; }
+  
+
+/* 2 */
+#contain-2 {
+    width: 37.9vw;
+    height: 10vw;
+    /* border: 1px solid black; */
+    overflow: hidden;
+    position: relative;
+    transform: translate(16.95vw, 4.2vw);
+    display: inline-block;
+  }
+  
+  .row {
+    height: 45px;
+    position: relative;
+    white-space: nowrap;
+  }
+  
+  .block {
+    width: 100px;
+    height: 20px;
+    background-color: #00AEEF;
+    display: inline-block;
+    animation-play-state: paused;
+    margin: 15px;
+  }
+
+  .blockik {
+    width: 30px;
+    height: 20px;
+    background-color: #00AEEF;
+    display: inline-block;
+    animation-play-state: paused;
+    margin: 15px;
+}
+  
+  #contain.animated .block {
+    animation-play-state: running;
+  }
+  
+  
+  /* Анимации с разной скоростью для каждого ряда */
+  .row:nth-child(1) .block {
+    animation: move 5s linear infinite; /* Первый ряд - 5 секунд */
+  }
+  .row:nth-child(2) .block {
+    animation: move 8s linear infinite; /* Второй ряд - 8 секунд */
+  }
+  .row:nth-child(3) .block {
+    animation: move 3s linear infinite; /* Третий ряд - 3 секунды */
+  }
+  
+  
+  @keyframes move {
+    from { transform: translateX(0); }
+    to { transform: translateX(calc(500px - 50px)); }
+  }
+  
+  /* Задержка для каждого блока, чтобы создать эффект волны */
+  .block:nth-child(2) { animation-delay: 1s; }
+  .block:nth-child(3) { animation-delay: 2s; }
+
+/* 3 */
+  #contain-3 {
+    width: 38.65vw;
+    height: 10vw;
+    /* border: 1px solid black; */
+    overflow: hidden;
+    position: relative;
+    transform: translate(17.1vw, 7.1vw);
+    display: inline-block;
+  }
+  
+  .roww {
+    height: 1vw;
+    position: relative;
+    white-space: nowrap;
+  }
+  
+  .blockk {
+    width: 2vw;
+    height: 0.2vw;
+    background-color: #FFF200;
+    display: inline-block;
+    animation-play-state: paused;
+    margin: 0.1vw;
+  }
+
+  .blockikk {
+    width: 2vw;
+    height: 0.2vw;
+    background-color: #FFF200;
+    display: inline-block;
+    animation-play-state: paused;
+    margin: 0.1vw;
+}
+  
+  #contain-3.animated .blockk {
+    animation-play-state: running;
+  }
+  
+  
+  /* Анимации с разной скоростью для каждого ряда */
+  .roww:nth-child(1) .blockk {
+    animation: move 8s linear infinite; /* Первый ряд - 5 секунд */
+  }
+  .roww:nth-child(2) .blockk {
+    animation: move 3s linear infinite; /* Второй ряд - 8 секунд */
+  }
+  .roww:nth-child(3) .blockk {
+    animation: move 5s linear infinite; /* Третий ряд - 3 секунды */
+  }
+  
+  
+  @keyframes move {
+    from { transform: translateX(0); }
+    to { transform: translateX(calc(500px - 50px)); }
+  }
+  
+  /* Задержка для каждого блока, чтобы создать эффект волны */
+  .blockk:nth-child(2) { animation-delay: 1s; }
+  .blockk:nth-child(3) { animation-delay: 2s; }
+
+  /* 4 */
+  #contain-4 {
+    width: 38vw;
+    height: 10vw;
+    overflow: hidden;
+    position: relative;
+    transform: translate(17.1vw, 7.1vw);
+    display: inline-block;
+  }
+  
+  .roww {
+    height: 55px;
+    position: relative;
+    white-space: nowrap;
+  }
+  
+  .blockk {
+    width: 100px;
+    height: 20px;
+    background-color: #FFF200;
+    display: inline-block;
+    animation-play-state: paused;
+    margin: 15px;
+  }
+
+  .blockikk {
+    width: 30px;
+    height: 20px;
+    background-color: #FFF200;
+    display: inline-block;
+    animation-play-state: paused;
+    margin: 15px;
+}
+  
+  #contain-4.animated .blockk {
+    animation-play-state: running;
+  }
+  
+  
+  /* Анимации с разной скоростью для каждого ряда */
+  .roww:nth-child(1) .blockk {
+    animation: move 8s linear infinite; /* Первый ряд - 5 секунд */
+  }
+  .roww:nth-child(2) .blockk {
+    animation: move 3s linear infinite; /* Второй ряд - 8 секунд */
+  }
+  .roww:nth-child(3) .blockk {
+    animation: move 5s linear infinite; /* Третий ряд - 3 секунды */
+  }
+  
+  
+  @keyframes move {
+    from { transform: translateX(0); }
+    to { transform: translateX(calc(500px - 50px)); }
+  }
+  
+  /* Задержка для каждого блока, чтобы создать эффект волны */
+  .blockk:nth-child(2) { animation-delay: 1s; }
+  .blockk:nth-child(3) { animation-delay: 2s; }
+
+ /* 5 */
+ #contain-5 {
+    width: 38.65vw;
+    height: 10vw;
+    overflow: hidden;
+    position: relative;
+    transform: translate(17.1vw, 13.5vw);
+    display: inline-block;
+  }
+  
+  .rowww {
+    height: 35px;
+    position: relative;
+    white-space: nowrap;
+  }
+  
+  .bloc {
+    width: 100px;
+    height: 20px;
+    background-color: #EC008C;
+    display: inline-block;
+    animation-play-state: paused;
+    margin: 15px;
+  }
+
+  .blocik {
+    width: 30px;
+    height: 20px;
+    background-color: #EC008C;
+    display: inline-block;
+    animation-play-state: paused;
+    margin: 15px;
+}
+  
+  #contain-5.animated .bloc {
+    animation-play-state: running;
+  }
+  
+  
+  /* Анимации с разной скоростью для каждого ряда */
+  .rowww:nth-child(1) .bloc {
+    animation: move 3s linear infinite; /* Первый ряд - 5 секунд */
+  }
+  .rowww:nth-child(2) .bloc {
+    animation: move 8s linear infinite; /* Второй ряд - 8 секунд */
+  }
+  .rowww:nth-child(3) .bloc {
+    animation: move 5s linear infinite; /* Третий ряд - 3 секунды */
+  }
+  
+  
+  @keyframes move {
+    from { transform: translateX(0); }
+    to { transform: translateX(calc(600px - 50px)); }
+  }
+  
+  /* Задержка для каждого блока, чтобы создать эффект волны */
+  .bloc:nth-child(2) { animation-delay: 1s; }
+  .bloc:nth-child(3) { animation-delay: 2s; }
+  
+
+/* 5 */
+#contain-6 {
+    width: 38vw;
+    height: 10vw;
+    overflow: hidden;
+    position: relative;
+    transform: translate(17.2vw, 13.5vw);
+    display: inline-block;
+  }
+  
+  .rowww {
+    height: 35px;
+    position: relative;
+    white-space: nowrap;
+  }
+  
+  .bloc {
+    width: 100px;
+    height: 20px;
+    background-color: #EC008C;
+    display: inline-block;
+    animation-play-state: paused;
+    margin: 15px;
+  }
+
+  .blocik {
+    width: 30px;
+    height: 20px;
+    background-color: #EC008C;
+    display: inline-block;
+    animation-play-state: paused;
+    margin: 15px;
+}
+  
+  #contain-6.animated .bloc {
+    animation-play-state: running;
+  }
+  
+  
+  /* Анимации с разной скоростью для каждого ряда */
+  .rowww:nth-child(1) .bloc {
+    animation: move 3s linear infinite; /* Первый ряд - 5 секунд */
+  }
+  .rowww:nth-child(2) .bloc {
+    animation: move 8s linear infinite; /* Второй ряд - 8 секунд */
+  }
+  .rowww:nth-child(3) .bloc {
+    animation: move 5s linear infinite; /* Третий ряд - 3 секунды */
+  }
+  
+  
+  @keyframes move {
+    from { transform: translateX(0); }
+    to { transform: translateX(calc(600px - 50px)); }
+  }
+  
+  /* Задержка для каждого блока, чтобы создать эффект волны */
+  .bloc:nth-child(2) { animation-delay: 1s; }
+  .bloc:nth-child(3) { animation-delay: 2s; }
+
+.migalki {
+    width: 100%;
+    height: 2.7%;
+    justify-content: center;
+    position: relative;
+    margin-top: -0.8vw;
+    margin-left: 0vw;
+    overflow: hidden;
+    background-image: url(../images/migalki_lenta.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+
+
+.sixth-frame {
+    width: 100%;
+    height: 13.8%;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background-image: url(../images/effects_screen.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.anim{
+  position: absolute;
+  width: 21.5vw;
+  width: 21.5vw;
+  transform: translate(38.8vw, 16.9vw);
+}
+.bibu {
+    position: absolute;
+    margin-top: 16.1vw;
+    margin-left: 2.4vw;
+ }
+ 
+.sharik {
+     width: 7.5vw;
+     height: 2.85vw;
+     border-radius: 20px;
+     border: 0.6vw solid white;
+     margin: 0.57vw;
+     background-color: #EC008C;
+     transition: background-color 0.5s;
+     display: inline-block;
+     transform: translate(0.05vw, -0.02vw);
+    
+}
+
+.bubi {
+    position: absolute;
+    margin-top: 16.1vw;
+    margin-left: 61.2vw;
+ }
+ 
+.shar {
+     width: 7.5vw;
+     height: 2.85vw;
+     border-radius: 20px;
+     border: 0.6vw solid white;
+     margin: 0.57vw;
+     background-color: #EC008C;
+     transition: background-color 0.5s;
+     display: inline-block;
+     transform: translate(0vw, -0.02vw);
+}
+/* display */
+.pryamiki {
+   position: absolute;
+   width: 40%;
+   margin-top: 21.4vw;
+   margin-left: 2.4vw;
+   display: inline-block;
+   /* vertical-align: top; */
+}
+.ya {
+    width: 7.48vw;
+    height: 7.4vw;
+    border-radius: 20px;
+    background-color: #ffffff;
+    border: 0.6vw solid #3E3E3E;
+    display: inline-block;
+    transition: background-color 0.1s ease;
+    margin: 0.6vw;
+ }
+  
+ .ya.clicked {
+    background-color: #FFF200;
+ } 
+
+.lu {
+    width: 7.48vw;
+    height: 7.4vw;
+    border-radius: 20px;
+    background-color: #ffffff;
+    border: 0.6vw solid #3E3E3E;
+    display: inline-block;
+    transition: background-color 0.1s ease;
+    margin: 0.6vw;
+ 
+ }
+  
+ .lu.clicked {
+    background-color: #EC008C;
+ } 
+
+ .b {
+    width: 7.48vw;
+    height: 7.4vw;
+    border-radius: 20px;
+    background-color: #ffffff;
+    border: 0.6vw solid #3E3E3E;
+    display: inline-block;
+    transition: background-color 0.1s ease;
+    margin: 0.6vw;
+ 
+ }
+  
+ .b.clicked {
+    background-color: #FFF200;
+ } 
+
+ .ly {
+    width: 7.48vw;
+    height: 7.4vw;
+    border-radius: 20px;
+    background-color: #ffffff;
+    border: 0.6vw solid #3E3E3E;
+    display: inline-block;
+    transition: background-color 0.1s ease;
+    margin: 0.6vw;
+ 
+ }
+  
+ .ly.clicked {
+    background-color: #00AEEF;
+ } 
+
+ 
+
+ .ti {
+    width: 7.48vw;
+    height: 7.4vw;
+    border-radius: 20px;
+    background-color: #ffffff;
+    border: 0.6vw solid #3E3E3E;
+    display: inline-block;
+    transition: background-color 0.1s ease;
+    margin: 0.6vw;
+ }
+  
+ .ti.clicked {
+    background-color: #00AEEF;
+ } 
+
+ .ka {
+    width: 7.48vw;
+    height: 7.4vw;
+    border-radius: 20px;
+    background-color: #ffffff;
+    border: 0.6vw solid #3E3E3E;
+    display: inline-block;
+    transition: background-color 0.1s ease;
+    margin: 0.6vw;
+ }
+  
+ .ka.clicked {
+    background-color: #EC008C;
+ } 
+
+ .v {
+    width: 7.48vw;
+    height: 7.4vw;
+    border-radius: 20px;
+    background-color: #ffffff;
+    border: 0.6vw solid #3E3E3E;
+    display: inline-block;
+    transition: background-color 0.1s ease;
+    margin: 0.6vw;
+ }
+  
+ .v.clicked {
+    background-color: #FFF200;
+ } 
+
+ .pryami {
+    position: absolute;
+    width: 40%;
+    margin-top: 21.4vw;
+    margin-left: 61.3vw;
+    display: inline-block;
+ }
+ .nr {
+    width: 7.48vw;
+    height: 7.4vw;
+     border-radius: 20px;
+     background-color: #ffffff;
+     border: 0.6vw solid #3E3E3E;
+     display: inline-block;
+     transition: background-color 0.1s ease;
+     margin: 0.6vw;
+  }
+   
+  .nr.clicked {
+     background-color: #FFF200;
+  } 
+ 
+ .av {
+    width: 7.48vw;
+    height: 7.4vw;
+     border-radius: 20px;
+     background-color: #ffffff;
+     border: 0.6vw solid #3E3E3E;
+     display: inline-block;
+     transition: background-color 0.1s ease;
+     margin: 0.6vw;
+  
+  }
+   
+  .av.clicked {
+     background-color: #00AEEF;
+  } 
+ 
+  .so {
+     width: 7.48vw;
+     height: 7.4vw;
+     border-radius: 20px;
+     background-color: #ffffff;
+     border: 0.6vw solid #3E3E3E;
+     display: inline-block;
+     transition: background-color 0.1s ease;
+     margin: 0.6vw;
+  
+  }
+   
+  .so.clicked {
+     background-color: #EC008C;
+  } 
+ 
+  .ba {
+     width: 7.48vw;
+     height: 7.4vw;
+     border-radius: 20px;
+     background-color: #ffffff;
+     border: 0.6vw solid #3E3E3E;
+     display: inline-block;
+     transition: background-color 0.1s ease;
+     margin: 0.6vw;
+  
+  }
+   
+  .ba.clicked {
+     background-color: #FFF200;
+  } 
+ 
+  
+ 
+  .ch {
+     width: 7.48vw;
+     height: 7.4vw;
+     border-radius: 20px;
+     background-color: #ffffff;
+     border: 0.6vw solid #3E3E3E;
+     display: inline-block;
+     transition: background-color 0.1s ease;
+     margin: 0.6vw;
+  }
+   
+  .ch.clicked {
+     background-color: #EC008C;
+  } 
+ 
+  .ki {
+     width: 7.48vw;
+     height: 7.4vw;
+     border-radius: 20px;
+     background-color: #ffffff;
+     border: 0.6vw solid #3E3E3E;
+     display: inline-block;
+     transition: background-color 0.1s ease;
+     margin: 0.6vw;
+  }
+   
+  .ki.clicked {
+     background-color: #00AEEF;
+  } 
+
+  .ga {
+    width: 7.48vw;
+    height: 7.4vw;
+    border-radius: 20px;
+    background-color: #ffffff;
+    border: 0.6vw solid #3E3E3E;
+    display: inline-block;
+    transition: background-color 0.1s ease;
+    margin: 0.6vw;
+ }
+  
+ .ga.clicked {
+    background-color: #FFF200;
+ }
+ 
+  .vv {
+     width: 7.48vw;
+     height: 7.4vw;
+     border-radius: 20px;
+     background-color: #ffffff;
+     border: 0.6vw solid #3E3E3E;
+     display: inline-block;
+     transition: background-color 0.1s ease;
+     margin: 0.6vw;
+  }
+   
+  .vv.clicked {
+     background-color: #00AEEF;
+  } 
+
+.prodolgit {
+    width: 100%;
+    height: 3.9%;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background-image: url(../images/prodolgitelnost.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.seventh-frame {
+    width: 100%;
+    height: 12.9%;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background-image: url(../images/prodolg_screen.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.container-11 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* overflow: hidden; */
+  transform: translate(1vw, 20.4vw);
+}
+
+img {
+  position: absolute;
+  left: 0;
+  transition: left 0.1s ease;
+  width: 5.7vw;
+  width: 5.7vw;
+}
+
+.polz {
+  position: relative;
+  transform: translate(10vw, 11.5vw);
+}
+
+.za {
+  width: 100%;
+  height: 3.9%;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  background-image: url(../images/zagruzka.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.zagruz {
+  width: 100%;
+  height: 10%;
+  position: relative;
+}
+
+.portre {
+  width: 100%;
+  height: 3.95%;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  background-image: url(../images/portret.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  transform: translate(0vw, -0.8vw);
+}
+
+.eighth-frame {
+  width: 100%;
+  height: 20%;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  background-image: url(../images/portret-screen.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  transform: translate(0vw, -1.7vw);
+}
+
+.port {
+  width: 43vw;
+  height: 43vw;
+  position: absolute;
+  transform: translate(28vw, 9.8vw);
+}
+
+.bebe {
+  position: absolute;
+  width: 25vw;
+  transform: translate(-2.7vw, 8.4vw);
+}
+/*  */
+
+.tutu {
+  position: relative;
+  display: grid;
+  transform: translate(11.3vw, 3.9vw);
+}
+
+.la {
+  width: 12.5vw;
+  height: 4.5vw;
+  border-radius: 20px;
+  background-color: #ffffff;
+  border: 9px solid #3E3E3E;
+  display: inline-block;
+  transition: background-color 0.1s ease;
+  margin: 0.45vw;
+}
+
+.la.clicked {
+  background-color: #00AEEF;
+} 
+
+.lala {
+  width: 12.5vw;
+  height: 4.4vw;
+  border-radius: 20px;
+  background-color: #ffffff;
+  border: 9px solid #3E3E3E;
+  display: inline-block;
+  transition: background-color 0.1s ease;
+  margin: 0.45vw;
+}
+
+.lala.clicked {
+  background-color: #EC008C;
+} 
+
+.lalala {
+  width: 12.5vw;
+  height: 4.4vw;
+  border-radius: 20px;
+  background-color: #ffffff;
+  border: 9px solid #3E3E3E;
+  display: inline-block;
+  transition: background-color 0.1s ease;
+  margin: 0.45vw;
+}
+
+.lalala.clicked {
+  background-color: #FFF200;
+} 
+
+.lalalala {
+  width: 12.5vw;
+  height: 4.4vw;
+  border-radius: 20px;
+  background-color: #ffffff;
+  border: 9px solid #3E3E3E;
+  display: inline-block;
+  transition: background-color 0.1s ease;
+  margin: 0.45vw;
+}
+
+.lalalala.clicked {
+  background-color: #D9D9D9;
+} 
+
+.con {
+  position: absolute;
+  width: 12.5vw;
+  height: 25.6vw;
+  transform: translate(82.7vw, 2.4vw);
+}
+
+.con img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.con img:last-child { /* Изображение для наведения */
+  visibility: hidden;
+}
+
+.con:hover img:last-child {
+  visibility: visible;
+} 
+
+/*  */ 
+
+.pla {
+  position: absolute;
+  
+}
+
+.con-2 {
+  position: absolute;
+  width: 12.5vw;
+  height: 25.6vw;
+  transform: translate(82.7vw, -6.4vw);
+}
+
+.con-2 img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.con-2 img:last-child { /* Изображение для наведения */
+  visibility: hidden;
+}
+
+.con-2:hover img:last-child {
+  visibility: visible;
+} 
+
+/*  */ 
+
+.sto {
+  position: absolute;
+  
+}
+
+.con-3 {
+  position: absolute;
+  width: 12.5vw;
+  height: 25.6vw;
+  transform: translate(82.7vw, -15.3vw);
+}
+
+.con-3 img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.con-3 img:last-child { /* Изображение для наведения */
+  visibility: hidden;
+}
+
+.con-3:hover img:last-child {
+  visibility: visible;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
